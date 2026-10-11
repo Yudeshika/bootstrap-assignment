@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <title>Sanke - Bootstrap Version</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img
+            src="images/sanke-logo.png"
+            alt="Sanke Logo"
+            style="width: 40px"
+            class="rounded-pill"
+          />
+          <span class="fw-bold">SANKE</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapsibleNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#interests">Interests</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#learning">Learning</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Get in Touch</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <p class="text-uppercase text-muted fw-semibold">
+              Hello, I'm Sankhapali
+            </p>
+            <h1 class="display-5 fw-bold">Welcome to My Web App</h1>
+            <p class="lead">
+              I'm a passionate web developer. Explore my interests, learn about
+              my journey, and get started with your own web development
+              adventure!
+            </p>
+            
+            <div class="d-grid gap-2 d-lg-flex mt-3">
+                <a href="#learning" class="btn btn-outline-light flex-lg-fill text-center">Explore my learning</a>
+                <a href="#contact" class="btn btn-outline-light flex-lg-fill text-center">Get in touch</a>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center mt-4 mt-lg-0">
+            <img
+              src="images/puzzle.png"
+              alt="Puzzle Image"
+              class="img-fluid rounded"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-0 border-secondary" />
+
+    <!-- about section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-2">A little about me</h2>
+        <p class="text-center text-muted mb-5">
+          Outside development, I enjoy activities that combine curiosity,
+          patience and creativity
+        </p>
+
+        <div id="interests" class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 text-center shadow-sm">
+              <div class="card-body">
+                <div class="fs-1">📖</div>
+                <h5 class="card-title mt-2">Reading Books</h5>
+                <p class="card-text">
+                  Reading lets me explore new ideas, learn from different
+                  perspectives and relax.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center shadow-sm">
+              <div class="card-body">
+                <div class="fs-1">🧩</div>
+                <h5 class="card-title mt-2">Solving Puzzles</h5>
+                <p class="card-text">
+                  I enjoy the challenge of finding patterns and working towards
+                  a complete solution.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 text-center shadow-sm">
+              <div class="card-body">
+                <div class="fs-1">🍳</div>
+                <h5 class="card-title mt-2">Cooking</h5>
+                <p class="card-text">
+                  Cooking gives me another way to experiment, create and share
+                  something enjoyable.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-0 border-secondary" />
+
+    <!-- quote section -->
+    <section id="quote" class="py-5" >
+      <div class="container text-center">
+        <p class="text-uppercase text-muted fw-semibold mb-4">
+          Quote of the Day
+        </p>
+
+        <div class="card mx-auto shadow-sm" style="max-width: 600px">
+          <div class="card-body p-4">
+            <p id="quote-text" class="fs-5 fst-italic">Loading...</p>
+            <p id="quote-author"></p>
+            <button id="new-quote-btn" class="btn btn-outline-light">
+              See another Quote
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-0 border-secondary" />
+
+    <!-- learning section -->
+    <section id="learning" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-2">My Learning Journey</h2>
+        <p class="text-uppercase text-muted mb-4">
+          I'm constantly learning and improving my skills in web development.
+        </p>
+        
+        <div class="card shadow-sm p-5">
+          <div class="row g-0">                                                                                                                                                    
+            <div class="col-md-6 bg-dark text-light p-4 rounded-start code-block">                                                                                                 
+                <div class="code-dots">                                                                                                                                            
+                    <span></span><span></span><span></span>                                                                                                                        
+                </div>        
+                <pre class="mb-0"><code><span class="ct-blue">&lt;section&gt;</span>
+
+                    <span class="ct-green">&lt;h2&gt;</span>Keep Learning<span class="ct-green">&lt;/h2&gt;</span>
+
+                    <span class="ct-green">&lt;p&gt;</span>Continue your web development journey with these resources and tips.</span>
+
+                    <span class="ct-green">&lt;/p&gt;</span></code></pre>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-4">
+                <div class="learning-text">
+                    <h2>Bringing ideas into life with code</h2>
+                    <p>
+                    Seeing a page appear in the browser after writing HTML & CSS
+                    is very satisfying. Web development is where creativity meets
+                    technical skills.
+                    </p>
+                    <h4>Resources I use to learn:</h4>
+                    <p>
+                    I use
+                    <a href="https://www.w3schools.com/" target="_blank"
+                        >W3Schools</a
+                    >
+                    to practise and learn more about HTML & CSS.
+                    </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-0 border-secondary" />
+
+    <!-- contact form -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-2">Get in Touch</h2>
+        <p class="text-center text-muted mb-5">
+          Would you like to discuss technology, recommend a book or puzzle, or
+          just say hello?
+        </p>
+
+        <div class="card shadow-sm mx-auto" style="max-width: 700px">
+          <div class="card-body p-4">
+            <div
+              id="form-message"
+              class="alert alert-success d-none"
+              role="alert"
+            ></div>
+
+            <form action="" id="contact-form">
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Jane Doe"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="janedoe@example.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="reason" class="form-label"
+                  >Reason for contacting me</label
+                >
+                <select name="reason" id="reason" class="form-select">
+                  <option value="" disabled selected>Choose a Reason</option>
+                  <option value="technology">Discuss a Technology</option>
+                  <option value="book">Recommend a Book</option>
+                  <option value="puzzle">Recommend a Puzzle</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Preferred Response</label>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    name="response"
+                    id="responseEmail"
+                    value="email"
+                    checked
+                  />
+                  <label for="responseEmail" class="form-check-label"
+                    >Email</label
+                  >
+                </div>
+                <div class="form-check">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    name="response"
+                    id="responseNone"
+                    value="none"
+                  />
+                  <label for="responseNone" class="form-check-label"
+                    >No Response Needed</label
+                  >
+                </div>
+              </div>
+
+              <div class="mb-3 d-none" id="topics-group">
+                <label class="form-label">Topics you are interested in</label>
+                <div class="checkbox-group" id="topics"></div>
+              </div>
+
+              <div class="mb-3">
+                <label for="message" class="form-label">Your Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  class="form-control"
+                  rows="4"
+                  placeholder="Write your message here..."
+                  maxlength="300"
+                  required
+                ></textarea>
+                <div class="form-text text-end">
+                  <span id="char-count">0</span>/300
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-end gap-2">
+                <button type="reset" class="btn btn-outline-secondary">
+                  Clear Form
+                </button>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="my-0 border-secondary" />
+
+    <!-- footer -->
+    <footer class="py-4 bg-dark text-light text-center">
+      <p class="mb-1 fw-bold">Thank you for visiting!</p>
+      <p class="mb-0 text-muted small">
+        Designed with HTML, Bootstrap 5 & JavaScript
+      </p>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
